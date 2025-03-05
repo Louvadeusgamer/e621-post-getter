@@ -1,4 +1,7 @@
-export async function postGetter(tags, postsQnt = 10) {
+export async function postGetter(tags, postsQnt) {
+    if (!postsQnt) {
+        postsQnt = 10
+    }
     try {
         let api = await fetch(`https://e621.net/posts.json?login=louvinhauwu&api_key=BLwpHqmM7JvosAUFejug1ezD${tags ? `&tags=${tags}` : ""}&limit=${postsQnt}`)
         api = await api.json()
