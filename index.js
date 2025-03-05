@@ -101,7 +101,7 @@ get.addEventListener("click", async () => {
     tags.replaceAll(" ", "+")
     console.log(`tags: ${tags}`)
     
-    const posts = await postGetter(tags)
+    const posts = await postGetter(tags, postsQNT.value)
     for (const postN in posts.posts) {
         const postURL = posts.posts[postN].file.url
         postsArray.push(new Post(postURL, tags))
