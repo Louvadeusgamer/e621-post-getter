@@ -3,14 +3,14 @@ import {postGetter} from "./src/getter.js"
 const root = document.getElementById("root")
 
 const imagesNav = document.createElement("div")
-imagesNav.style.width = "75%"
+imagesNav.style.width = "100%"
 imagesNav.style.heigth = "fit-content"
 imagesNav.style.borderRadius = "15%"
 imagesNav.style.border = "solid 1px dotted"
 imagesNav.style.backgroundColor = "lightgray"
 
 const image = document.createElement("img")
-image.style.width = "75%"
+image.style.width = "100%"
 
 const postNumber = document.createElement("span")
 postNumber.innerHTML = "post 0/0"
